@@ -11,10 +11,11 @@ function nestedTarget(){
 }
 
 function increaseRankBy(n){
-  const lis = document.getElementById('app').querySelectorAll('ul.ranked-list li');
+  //Define a function increaseRankBy(n) that increases the ranks in all of the .ranked-lists by n. (You might need to make use of parseInt()
+  const rankedLists = document.getElementById('app').querySelectorAll('ul.ranked-list');
 
-  for (let i=0; i<lis.length; i++){
-    lis[i].innerHTML = (parseInt(i)+1).toString();
+  for (let i=0; i<rankedLists.length; i++){
+    rankedLists[i].innerHTML = (parseInt(i)+n).toString();
   }
 }
 
